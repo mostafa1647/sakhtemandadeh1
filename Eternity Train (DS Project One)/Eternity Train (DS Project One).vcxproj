@@ -147,9 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Eternity Train (DS Project One).cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="ArrayList.h" />
     <ClInclude Include="MyList.h" />
     <ClInclude Include="MyStack.h" />
@@ -159,6 +156,9 @@
     <ClInclude Include="SkipList.h" />
     <ClInclude Include="SkipNode.h" />
     <ClInclude Include="Station.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Eternity Train (DS Project One).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

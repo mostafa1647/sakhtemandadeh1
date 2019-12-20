@@ -3,13 +3,6 @@
 #include "Node.h"
 using namespace std;
 
-//template <class T>
-//union Down
-//{
-//	SkipNode<T>* snDown;
-//	Node<T>* nDown;
-//};
-
 template <class T>
 class SkipNode
 {
@@ -23,12 +16,12 @@ public:
 		this->next = nullptr;
 		this->down = nullptr;
 	}
-	SkipNode(T data, SkipNode<T>* down) {
+	SkipNode(T data, Node<T>* down) {
 		this->data = data;
 		this->next = nullptr;
 		this->down = down;
 	}
-	SkipNode(const SkipNode& node){
+	SkipNode(const SkipNode<T>& node){
 		this->data = node.data;
 		this->next = node.next;
 		this->down = node.down;
@@ -36,19 +29,19 @@ public:
 	void setData(T data) {
 		this->data = data;
 	}
-	void setNext(SkipNode* next) {
+	void setNext(SkipNode<T>* next) {
 		this->next = next;
 	}
-	void setDown(SkipNode* down) {
+	void setDown(SkipNode<T>* down) {
 		this->down = down;
 	}
 	T getData() {
 		return this->data;
 	}
-	SkipNode* getNext() {
+	SkipNode<T>* getNext() {
 		return this->next;
 	}
-	SkipNode* getDown() {
+	Node<T>* getDown() {
 		return this->down;
 	}
 
@@ -57,6 +50,6 @@ protected:
 
 private:
 	T data;
-	SkipNode* next;
-	SkipNode* down;
+	SkipNode<T>* next;
+	Node<T>* down;
 };

@@ -10,7 +10,7 @@ class Person //Nodes
 public:
 	Person() {
 		this->id = 0;
-		this->foods = NULL;
+		this->foods = new MyStack<int>();
 	}
 	Person(int id) {
 		this->setId(id);

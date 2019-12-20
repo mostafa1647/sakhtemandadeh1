@@ -22,6 +22,15 @@ public:
 	T dequeueu() {
 		return this->list->pop_front();
 	}
+	int getSize() {
+		return this->list->getSize();
+	}
+	Node<T>* begin() {
+		return this->list->begin();
+	}
+	Node<T>* end() {
+		return this->list->end();
+	}
 private:
 	MyList<T>* list;
 };

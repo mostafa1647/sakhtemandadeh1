@@ -20,24 +20,26 @@ public:
 		this->next = NULL;
 		//this->prev = NULL;
 	}
-	void setNext(Node* next) {
+	void setNext(Node<T>* next) {
 		this->next = next;
 	}
-	/*void setPrev(Node* prev) {
+	/*void setPrev(Node<T>* prev) {
 		this->prev = prev;
 	}*/
-	Node* getNext() {
+	Node<T>* getNext() {
 		return this->next;
 	}
-	/*Node* getPrev() {
+	/*Node<T>* getPrev() {
 		return this->prev;
 	}*/
 	T getData() {
 		return this->data;
 	}
 
+
+
 private:
 	T data;
-	Node* next;
-	//Node* prev;
+	Node<T>* next;
+	//Node<T>* prev;
 };
